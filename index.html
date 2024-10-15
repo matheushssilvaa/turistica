@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./home/css/homestyle.css" />
+    <link rel="stylesheet" href="./home/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <title>Turismo</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/logo%20png%20preta.png?token=GHSAT0AAAAAACWNLPRHS3LAEWY26GABE4CWZXUR7YQ"
+                    id="logo" alt="logo" />
+                <div class="navbar-header">
+                    <button type="button" id="btn-mobile" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/">Início</a></li>
+                        <li><a href="./pontos-turisticos/PontosTuristicos.html">Pontos Turísticos</a></li>
+                        <li><a href="./acomodacao/acomodacao/acomodacoes.html">Acomodações</a></li>
+                        <li><a href="#">Refeitório e Piscina</a></li>
+                        <li><a href="#">Área Recriativa</a></li>
+                        <li><a href="./pacotes-promocionais/pacotes-promocionais/pacotes.html">Pacotes Promocionais</a>
+                        </li>
+                        <li><a href="#">Fale Conosco</a></li>
+                    </ul>
+                    <div class="sociais">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div style="margin: 0; top: 0;" id="container-carousel-bt">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C1.3.JPG" class="img-responsive" alt="banner01"
+                            style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3 class="h3-bootstrap">Descubra a Magia de Gramado</h3>
+                            <p class="p-bootstrap">Bem-vindo a Gramado, um dos destinos mais encantadores do Brasil!
+                                Situada na Serra Gaúcha, esta cidade é um verdadeiro cartão-postal que combina natureza
+                                exuberante, cultura rica e uma arquitetura inspirada nos Alpes europeus.</p>
+                            <div class="btn-carrossel">
+                                <a class="btn btn-primary" id="button-btn" style="padding: 20px;" href="#saiba-mais"
+                                    role="button">Saiba mais</a>
+                                <a class="btn btn-primary" id="button-btn-white" style="padding: 20px;" href="./FaleConosco/FaleConosco/index.html"
+                                    role="button">Reserve agora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/banner2.jpg" alt="banner02" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3 class="h3-bootstrap">Hospede-se com Conforto e Sofisticação em Gramado</h3>
+                            <p class="p-bootstrap">Desfrute de suítes exclusivas, piscina aquecida, e pacotes
+                                promocionais com tudo o que você precisa para relaxar.</p>
+                            <div class="btn-carrossel">
+                                <a class="btn btn-primary" style="padding: 20px;" href="#saiba-mais" role="button">Saiba mais</a>
+                                <a class="btn btn-primary" id="button-btn-white" style="padding: 20px;" href="./FaleConosco/FaleConosco/index.html"
+                                    role="button">Reserve agora</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/banner3.jpg" alt="banner03" style="width:100%;">
+                        <div class="carousel-caption">
+                            <h3 class="h3-bootstrap">Descubra Gramado: O Destino dos Seus Sonhos</h3>
+                            <p class="p-bootstrap">Explore pontos turísticos incríveis e acomodações de luxo para uma
+                                experiência inesquecível na Serra Gaúcha.</p>
+                            <div class="btn-carrossel">
+                                <a class="btn btn-primary" style="padding: 20px;" href="#saiba-mais" role="button">Saiba mais</a>
+                                <a class="btn btn-primary" id="button-btn-white" style="padding: 20px;"
+                                    href="./FaleConosco/FaleConosco/index.html" role="button">Reserve agora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+            </div>
+        </div>
+        <div class="two-section" style="margin-top: 15px; margin-bottom: 15px;" id="saiba-mais">
+            <div class="container">
+                <div class="content-img-about">
+                    <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/banner2.jpg" alt="banner-section-two" />
+                    <div class="content-title-about" style="justify-content: center; align-items: center;">
+
+                        <h2>Estância Turistica de Gramado - RS</h2>
+                        <p class="p-bootstrap">Localizada nas colinas verdes de Gramado, a Estância Turística Bela Vista
+                            é o lugar ideal
+                            para quem busca tranquilidade, conforto e experiências memoráveis na Serra Gaúcha.</p>
+                        <a href="#saiba-mais"><button type="button" id="button-btn">Faça uma reserva</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-color">
+            <h5 style="margin-top: 50px;">Quem somos</h5>
+            <h2 style="text-align: center; margin-bottom: 20px;">Destaques</h2>
+            <div class="flex-destaques">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3" id="icons">
+                            <i class="fa-solid fa-bed"></i>
+                            <h3 style="font-size: 20px;">Dormitórios</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-swimmer"></i>
+                            <h3 style="font-size: 20px;">Piscinas aquecidas</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-child"></i>
+                            <h3 style="font-size: 20px;">Área Recreativa Infantil</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-paw"></i>
+                            <h3 style="font-size: 20px;">Hospedagem Pet</h3>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-md-3">
+                            <i class="fas fa-users"></i>
+                            <h3 style="font-size: 20px;">Salão de Eventos</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-utensils"></i>
+                            <h3 style="font-size: 20px;">Refeitório temático</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-car"></i>
+                            <h3 style="font-size: 20px;">Estacionamento</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <i class="fas fa-door-open"></i>
+                            <h3 style="font-size: 20px;">Suites</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="acomodacoes">
+            <div class="container">
+                <h5 style="margin-top: 50px;">Acomodações</h5>
+                <h2>Acomodações em meio a Natureza</h2>
+                <p class="p-bootstrap">Com arquitetura inspirada no estilo europeu de Gramado, nossas acomodações
+                    oferecem conforto em meio
+                    à natureza, com opções ideais para casais, famílias e grupos.</p>
+                <div class="flex-images-acomodacoes">
+                    <div class="imagens-acomocacoes">
+                        <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/acomodacoes/ChaleEx.jpg" alt="1mg01" id="flex-img-acomodacoes" />
+                    </div>
+                    <div class=" imagens-acomocacoes">
+                        <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/acomodacoes/DormitorioLx.png" alt="1mg01" id="flex-img-acomodacoes" />
+                    </div>
+                    <div class="imagens-acomocacoes">
+                        <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/acomodacoes/DormitorioPr.png" alt="1mg01" id="flex-img-acomodacoes" />
+                    </div>
+                    <div class="imagens-acomocacoes">
+                        <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/acomodacoes/SuiteEx.png" alt="1mg01" id="flex-img-acomodacoes" />
+                    </div>
+                </div>
+                <a href="./acomodacao/acomodacao/acomodacoes.html"><button type="button" id="button-btn"
+                        style="margin-top: 20px;">Saiba mais</button></a>
+            </div>
+        </div>
+
+        <div class="acomodacoes" style="margin-top: 0px;">
+            <div class="container">
+                <h5 style="margin-top: 120px;">Pacotes Promocionais</h5>
+                <h2>Experiências Personalizadas para Você</h2>
+                <p class="p-bootstrap">Aproveite nossos pacotes criados especialmente para você vivenciar o melhor da
+                    Serra Gaúcha.</p>
+                <div class="flex-acomodacoes">
+                    <div class="row">
+                        <div class="col-md-4" id="card-acomodacoes">
+                            <div class="img-card-acomodacoes">
+                                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C1.1.jpg" alt="img-card-acomodacoes" />
+                            </div>
+                            <h3>Hospedagem por temporada</h3>
+                            <p>Aproveite longas estadias com tudo incluso, ideal para quem deseja se desconectar.</p>
+                            <a href="./pacotes-promocionais/pacotes.html"><button type="button"
+                                    class="btn btn-primary">Saiba mais</button></a>
+                        </div>
+                        <div class="col-md-4" id="card-acomodacoes">
+                            <div class="img-card-acomodacoes">
+                                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C1.3.JPG" alt="img-card-acomodacoes" />
+                            </div>
+                            <h3>Finais de semana</h3>
+                            <p>Relaxe nos finais de semana com alimentação e atividades inclusas. Clique abaixo e
+                                conheça!</p>
+                            <a href="./pacotes-promocionais/pacotes.html"><button type="button"
+                                    class="btn btn-primary mt-auto">Saiba mais</button></a>
+                        </div>
+                        <div class="col-md-4" id="card-acomodacoes">
+                            <div class="img-card-acomodacoes">
+                                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C2.1.jpg" alt="img-card-acomodacoes" />
+                            </div>
+                            <h3>Finais de semana com tudo incluso</h3>
+                            <p>O equilíbrio perfeito entre conforto e praticidade. Clique abaixo e conheça!</p>
+                            <a href="./pacotes-promocionais/pacotes.html"><button type="button"
+                                    class="btn btn-primary mt-auto">Saiba mais</button></a>
+                        </div>
+                        <div class="col-md-4" id="card-acomodacoes">
+                            <div class="img-card-acomodacoes">
+                                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C2.2.jpg" alt="img-card-acomodacoes" />
+                            </div>
+                            <h3>Hospedagem por temporada</h3>
+                            <p>Aproveite longas estadias com tudo incluso, ideal para quem deseja se desconectar.</p>
+                            <a href="./pacotes-promocionais/pacotes.html"><button type="button"
+                                    class="btn btn-primary">Saiba mais</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="servicos-lazer">
+            <h5>Serviços e Lazer</h5>
+            <h2>Diversão e Conforto no Coração da Serra</h2>
+            <div class="container">
+                <div class="content-servicos-lazer">
+                    <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/servicos-e-lazer/pisc1.jpg" alt="img01" id="shadow" />
+                    <div class="text-servicos-lazer">
+                        <h2>Piscinas naturais e aquecidas com vista para as montanhas</h2>
+                        <p>Desfrute de momentos relaxantes em nossas piscinas naturais e aquecidas, todas com uma
+                            deslumbrante vista para as montanhas da Serra Gaúcha. Um convite perfeito para descansar em
+                            harmonia com a natureza.</p>
+                    </div>
+                </div>
+                <div class="content-servicos-lazer">
+                    <div class="text-servicos-lazer-two">
+                        <h2>Refeitório amplo com gastronomia típica gaúcha e temática europeia</h2>
+                        <p>Nosso refeitório combina o melhor da gastronomia tradicional gaúcha com toques da culinária
+                            europeia. Um ambiente acolhedor e temático, perfeito para saborear refeições inesquecíveis
+                            enquanto aprecia a cultura local.</p>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/servicos-e-lazer/barpisc.jpg" alt="img01" id="mt-img" />
+                </div>
+                <div class="content-servicos-lazer">
+                    <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/banner3.jpg" alt="img01" id="shadow" />
+                    <div class="text-servicos-lazer">
+                        <h2>Área recreativa infantil com atividades ao ar livre</h2>
+                        <p>As crianças têm seu espaço garantido na estância! Nossa área recreativa infantil conta com
+                            diversas atividades ao ar livre, proporcionando diversão e contato com a natureza para os
+                            pequenos.</p>
+                    </div>
+                </div>
+                <div class="content-servicos-lazer">
+                    <div class="text-servicos-lazer-two">
+                        <h2>Hospedagem Pet</h2>
+                        <p>As crianças têm seu espaço garantido na estância! Nossa área recreativa infantil conta com
+                            diversas atividades ao ar livre, proporcionando diversão e contato com a natureza para os
+                            pequenos.</p>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/servicos-e-lazer/restdoce.jpg" alt="img01" id="mt-img" />
+                </div>
+                <div class="content-servicos-lazer">
+                    <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/servicos-e-lazer/rest3.png" alt="img01" id="shadow" />
+                    <div class="text-servicos-lazer">
+                        <h2>Salão para Eventos e Convenções</h2>
+                        <p>Com infraestrutura completa, nosso salão de eventos é ideal para convenções, encontros
+                            corporativos e celebrações especiais. Espaçoso e versátil, o ambiente pode ser adaptado para
+                            diferentes tipos de eventos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="h2-galeria-imagens" style="text-align: center;">Galeria de imagens</h2>
+        <div class="galeria-imagens">
+
+            <div class="content-galeria-imagens">
+                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/galeria/galeria1.jpg" />
+            </div>
+            <div class="content-galeria-imagens">
+                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/galeria/galeria2.jpg" />
+            </div>
+            <div class="content-galeria-imagens">
+                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/galeria/galeria3.jpg" />
+            </div>
+            <div class="content-galeria-imagens">
+                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/galeria/galeria4.jpg" />
+            </div>
+        </div>
+        <div class="pontos-turisticos-proximos">
+            <div class="container">
+                <h5>Pontos Turísticos</h5>
+                <h2>Explore as Belezas de Gramado e Região</h2>
+                <p class="p-bootstrap">Aproveite sua estadia para visitar os famosos pontos turísticos da Serra Gaúcha,
+                    localizados próximos
+                    à nossa estância.</p>
+                <div class="content-pontos-turisticos-proximos">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="content-imagem-pontos-turisticos-prontos">
+                                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/lago%20negro.png" alt="img01" />
+                            </div>
+                            <h3>Lago Negro</h3>
+                            <p>Desfrute de passeios tranquilos de pedalinho no lago cercado de araucárias.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="content-imagem-pontos-turisticos-prontos">
+                                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/mini%20mundo.jpg" alt="img01" />
+                            </div>
+                            <h3>Mini Mundo</h3>
+                            <p>Um parque em miniatura que encanta crianças e adultos.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="content-imagem-pontos-turisticos-prontos">
+                                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/rua%20coberta.jpeg" alt="img01" />
+                            </div>
+                            <h3>Rua Coberta</h3>
+                            <p>Aproveite a gastronomia e o charme do centro de Gramado.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="content-imagem-pontos-turisticos-prontos">
+                                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/parque%20caracol.jpeg" alt="img01" />
+                            </div>
+                            <h3>Parque do Caracol</h3>
+                            <p>Um refúgio natural com cachoeiras e trilhas deslumbrantes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="./pontos-turisticos/PontosTuristicos.html"><button type="button" id="button-btn">Conheça as outras
+                    regiões</button></a>
+        </div>
+
+        <div class="depoimentos" style="margin-top: 100px;">
+            <h5>Nossos Clientes</h5>
+            <h2 style="text-align: center;">Testemunhos</h2>
+            <div class="container">
+                <div class="content-testemunhos">
+                    <div class="row">
+                        <div class="card-comentario">
+                            <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/avatar01.png" class="img-avatar" />
+                            <h4>Maria Clara Souza</h4>
+                            <p>A estância é um verdadeiro refúgio de paz. As acomodações são impecáveis, e o atendimento
+                                foi excepcional. O contato com a natureza e a tranquilidade da serra fizeram toda a
+                                diferença na nossa estadia. Mal posso esperar para voltar!</p>
+                        </div>
+                        <div class="card-comentario">
+                            <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/avatar01.png" class="img-avatar" />
+                            <h4>Rafael Lima</h4>
+                            <p>Passei um fim de semana maravilhoso com minha família na Estância Bela Vista. Meus filhos
+                                adoraram a área recreativa e as piscinas aquecidas. Além disso, a comida no refeitório
+                                temático foi excelente! Tudo perfeito para uma escapada relaxante.</p>
+                        </div>
+                        <div class="card-comentario">
+                            <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/avatar01.png" class="img-avatar" />
+                            <h4>Camila Mendes</h4>
+                            <p>Organizamos uma convenção da empresa no salão de eventos da estância, e foi incrível. O
+                                ambiente é confortável e bem estruturado, perfeito para eventos corporativos. A equipe
+                                foi muito prestativa, e todos os convidados ficaram encantados com o local.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cta-final" style="text-align: center; margin-top: 100px;">
+            <div class="container">
+                <div class="container-cta-final">
+                    <h2>Reserve sua Estadia e Explore o Melhor de Gramado!</h2>
+                    <P class="p-bootstrap">Viva momentos inesquecíveis na Serra Gaúcha com todo o conforto da Estância
+                        Turística Bela Vista.</P>
+                    <a href="./FaleConosco/FaleConosco/index.html"<button type="button" class="btn btn-primary" id="button-btn-white">Faça sua reserva agora</button></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/logo%20png%20branca.png?token=GHSAT0AAAAAACWNLPRGRLXBLYMKK4RGJGGYZXUR7CQ"
+                class="logo-footer" alt="logo-footer" />
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Quem Somos</h2>
+                    <p class="description-footer">Localizada nas colinas verdes de Gramado, a Estância Turística Bela
+                        Vista é o lugar ideal
+                        para quem busca tranquilidade, conforto e experiências memoráveis na Serra Gaúcha.</p>
+                    <span>© Turistica - todos os direitos reservados 2024</span>
+                </div>
+                <div class="col-md-4">
+                    <h2>Menu</h2>
+                    <p>Pontos Turísticos</p>
+                    <p>Acomodações</p>
+                    <p>Refeitório e Piscina</p>
+                    <p>Área Recreativa</p>
+                    <p>Pacotes Promocionais</p>
+                    <p>Fale Conosco</p>
+                    <p>Quem somos</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Endereço</h2>
+                    <p>Localidade: Gramado - RS</p>
+                    <p>Telefone: (xx) XXXXX-XXXX</p>
+                    <p>Email: contato@turistica.com.br</p>
+                    <h3>Newletter</h3>
+                    <input type="email" name="email" id="newsletter" placeholder="Seu email aqui..." />
+                    <input type="submit" value="Enviar" id="submit-newsletter" />
+                    <div class="sociais-footer">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

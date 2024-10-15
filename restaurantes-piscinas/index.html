@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Turismo</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/logo%20png%20preta.png?token=GHSAT0AAAAAACWNLPRHS3LAEWY26GABE4CWZXUR7YQ"
+                    id="logo" alt="logo" />
+                <div class="navbar-header">
+                    <button type="button" id="btn-mobile" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Início</a></li>
+                        <li><a href="../pontos-turisticos/PontosTuristicos.html">Pontos Turísticos</a></li>
+                        <li><a href="../acomodacao/acomodacao/acomodacoes.html">Acomodações</a></li>
+                        <li class="active"><a href="../restaurantes-piscinas/index.html">Refeitório e Piscina</a></li>
+                        <li><a href="../area-recreativa/area_recreativa.html">Área Recriativa</a></li>
+                        <li><a href="../pacotes-promocionais/pacotes.html">Pacotes Promocionais</a></li>
+                        <li><a href="../FaleConosco/FaleConosco/index.html">Fale Conosco</a></li>
+                    </ul>
+                    <div class="sociais">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <center>
+        <br>
+        <h3 style="font-size: 50px; color: black; font-family:verdana;">Restaurantes e Piscinas</h3>
+        <br>
+    </center>
+    <div class="container-fluid">
+
+        <!-- Início Carousel -->
+        <div class="row" style="padding-top: 10px">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <center>
+                                <a href=".html"><img class="img-responsive"
+                                        src="https://raw.githubusercontent.com/IgorMaza/projEngSoft/refs/heads/main/img/rest1.jpg"
+                                        alt="" style="width: 1150px; height: 600px;"></a>
+                            </center>
+                        </div>
+                        <div class="item">
+                            <center>
+                                <a href=".html"><img class="img-responsive"
+                                        src="https://raw.githubusercontent.com/IgorMaza/projEngSoft/refs/heads/main/img/rest2.jpg"
+                                        alt="" style="width: 1150px; height: 600px;"></a>
+                            </center>
+                        </div>
+                        <div class="item">
+                            <center>
+                                <a href=".html"><img class="img-responsive"
+                                        src="https://raw.githubusercontent.com/IgorMaza/projEngSoft/refs/heads/main/img/pisc1.jpg"
+                                        alt="" style="width: 1150px; height: 600px;"></a>
+                            </center>
+                        </div>
+                        <div class="item">
+                            <center>
+                                <a href=".html"><img class="img-responsive"
+                                        src="https://raw.githubusercontent.com/IgorMaza/projEngSoft/refs/heads/main/img/pisc2.jpg"
+                                        alt="" style="width: 1150px; height: 600px;"></a>
+                            </center>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Carousel -->
+
+    </div>
+    <div class="container">
+        <section id="restaurants">
+            <br>
+            <h2 style="font-size: 40px; color: black; font-family:verdana; ">Restaurantes</h2>
+            <div class="section">
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/IgorMaza/projEngSoft/refs/heads/main/img/pratos-tpicos.png"
+                        alt="Restaurante Vista Mar" class="image-wrapper" style="width: 300px; height: 200px;">
+                    <img src="https://raw.githubusercontent.com/IgorMaza/projEngSoft/refs/heads/main/img/comida.png"
+                        alt="Restaurante Tradição" class="image-wrapper" style="width: 300px; height: 200px;">
+                    <img src="https://raw.githubusercontent.com/IgorMaza/projEngSoft/refs/heads/main/img/restdoce.jpg"
+                        alt="Restaurante Tradição" class="image-wrapper" style="width: 300px; height: 200px;">
+
+                </div> 
+                <div class="text-container">
+                    <p style="color:black;"><strong style="color: black; font-size: 20px;">Sabores Incríveis da Cozinha
+                            Brasileira: </strong>Em nosso destino turístico, a gastronomia é uma experiência que encanta
+                        todos os paladares. Nossa especialização na comida brasileira é um convite a explorar a rica
+                        diversidade de sabores e ingredientes que o país tem a oferecer. </p>
+                    <p style="color:black;"><strong style="color: black; font-size: 20px;">Variedade de Pratos:
+                        </strong>Nossa cozinha apresenta uma ampla gama de pratos, desde as delícias regionais até as
+                        opções mais contemporâneas. Você pode saborear pratos típicos como feijoada, moqueca e acarajé,
+                        cada um preparado com ingredientes frescos e técnicas autênticas que preservam o verdadeiro
+                        sabor brasileiro. </p>
+                    <p style="color:black;"><strong style="color: black; font-size: 20px;">Ingredientes Frescos e
+                            Locais: </strong>Priorizamos o uso de ingredientes locais e frescos, garantindo que cada
+                        prato ofereça o melhor da culinária. Nossos chefs se dedicam a criar receitas que destacam a
+                        riqueza dos produtos regionais, proporcionando uma experiência gastronômica inesquecível. </p>
+                    <p style="color:black;"><strong style="color: black; font-size: 20px;">Experiências Gastronômicas:
+                        </strong>Além dos pratos tradicionais, oferecemos experiências gastronômicas interativas, como
+                        aulas de culinária e jantares temáticos. Você terá a oportunidade de aprender a preparar
+                        receitas clássicas e descobrir os segredos da culinária brasileira diretamente com nossos chefs.
+                    </p>
+                    <p style="color:black;"><strong style="color: black; font-size: 20px;">Opções para Todos os
+                            Paladares: </strong>Sabemos que cada visitante tem suas preferências. Por isso, nosso menu
+                        inclui opções vegetarianas, veganas e sem glúten, garantindo que todos possam desfrutar de uma
+                        refeição deliciosa. A diversidade de sabores é uma das nossas maiores fortalezas. </p>
+                    <p style="color:black;"><strong style="color: black; font-size: 20px;">Doce Encanto: </strong>Para
+                        completar a sua experiência, não deixe de experimentar nossas sobremesas tradicionais, como
+                        pudim, quindim e brigadeiro. Cada doce é uma explosão de sabor que vai deixar você com um
+                        gostinho de quero mais. </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="pools">
+            <br>
+            <h2 style="font-size: 40px; color: black; font-family:verdana; ">Piscinas</h2>
+            <div class="section">
+                <div class="text-container">
+                    <p style="color:black;"><strong style="color: black; font-size: 20px;">Descubra Nossas Piscinas e
+                            Bares: </strong>Em nosso destino turístico, você encontrará uma experiência de lazer
+                        incomparável nas nossas diversas piscinas, projetadas para agradar a todos os gostos. Se você
+                        está em busca de relaxamento ou diversão, temos a piscina perfeita para você.</p>
+                    <p style="color:black;"><strong style="color: black; font-size: 20px;">Variedade de Piscinas:
+                        </strong>Nossas instalações incluem uma ampla gama de piscinas, desde a exuberante piscina
+                        principal, ideal para banhos de sol e momentos de descontração, até a piscina infantil, que
+                        oferece um espaço seguro e divertido para as crianças. Cada piscina é cuidadosamente projetada
+                        com áreas de hidromassagem e espreguiçadeiras, criando um ambiente ideal para relaxar e se
+                        refrescar em um dia ensolarado.</p>
+                    <p style="color:black;"><strong style="color: black; font-size: 20px;">Bares à Beira da Piscina:
+                        </strong>Para complementar sua experiência, contamos com bares à beira da piscina que oferecem
+                        uma seleção irresistível de bebidas e petiscos. Delicie-se com coquetéis tropicais, smoothies
+                        refrescantes e uma variedade de petiscos leves, tudo servido com um sorriso. Nossos bartenders
+                        são especialistas em criar drinks exclusivos, proporcionando uma experiência gastronômica que
+                        combina perfeitamente com o clima relaxante à beira da piscina.</p>
+                    <p style="color:black;"><strong style="color: black; font-size: 20px;">Ambiente Ideal: </strong>O
+                        ambiente descontraído dos nossos bares à beira da piscina é o lugar perfeito para socializar com
+                        amigos ou simplesmente desfrutar de um momento de tranquilidade. À medida que o sol se põe, a
+                        atmosfera se transforma, e você pode relaxar com a música suave e as luzes cintilantes, tornando
+                        suas noites inesquecíveis.</p>
+
+                    <p style="color:black; font-size: 20px;">Venha aproveitar tudo o que temos a oferecer nas nossas
+                        piscinas e bares, e descubra um verdadeiro oásis de diversão e relaxamento em seu próximo
+                        passeio!</p>
+                </div>
+                <div class="image-container">
+                    <img src="https://raw.githubusercontent.com/IgorMaza/projEngSoft/refs/heads/main/img/pisc3.PNG"
+                        alt="Piscina" class="pool-image" style="width: 300px; height: 200px;">
+                    <img src="https://raw.githubusercontent.com/IgorMaza/projEngSoft/refs/heads/main/img/pisc4.png"
+                        alt="Piscina" class="pool-image" style="width: 300px; height: 200px;">
+                    <img src="https://raw.githubusercontent.com/IgorMaza/projEngSoft/refs/heads/main/img/barpisc.jpg"
+                        alt="Piscina" class="pool-image" style="width: 300px; height: 200px;">
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/logo%20png%20branca.png?token=GHSAT0AAAAAACWNLPRGRLXBLYMKK4RGJGGYZXUR7CQ"
+                class="logo-footer" alt="logo-footer" />
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Quem Somos</h2>
+                    <p class="description-footer">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                        has roots in a piece of classical Latin literature from 45 BC, making it over 2000 anos old.
+                        Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                        the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
+                        cites of the word in classical literature, discovered the undoubtable source.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Menu</h2>
+                    <p>Pontos Turísticos</p>
+                    <p>Acomodações</p>
+                    <p>Refeitório e Piscina</p>
+                    <p>Área Recreativa</p>
+                    <p>Pacotes Promocionais</p>
+                    <p>Fale Conosco</p>
+                    <p>Quem somos</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Endereço</h2>
+                    <p>Localidade: Gramado - RS</p>
+                    <p>Telefone: (XX) XXXXX-XXXX</p>
+                    <p>Email: contato@turistica.com.br</p>
+                    <h3>Newsletter</h3>
+                    <input type="email" name="email" id="newsletter" placeholder="Seu email aqui..." />
+                    <input type="submit" value="Enviar" id="submit-newsletter" />
+                    <div class="sociais-footer">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                </div>
+            </div>
+            <span>© Turistica - todos os direitos reservados 2024</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

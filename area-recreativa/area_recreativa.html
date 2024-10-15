@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Área Recreativa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+      <style>
+        #navbarsticky {
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        :root {
+    --bg-default: #f3f3f3cc;
+    --primary-color: rgb(0, 113, 158);
+    --accent-primary-color: rgb(0, 169, 236);
+    --secundary-color: rgb(248, 150, 2);
+    --accent-secundary-color: rgb(245, 188, 3);
+    --text-color: #0c0c0c;
+}
+
+.container-fluid {
+    background-color: var(--bg-default);
+    color: var(--primary-color);
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+
+}
+
+header {
+    -webkit-box-shadow: -2px 3px 28px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 3px 28px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 3px 28px -10px rgba(0, 0, 0, 0.75);
+}
+
+.navbar {
+    background-color: #303030cc;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 9px 9px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+#logo {
+    width: 10%;
+    padding: 10px;
+}
+
+.navbar-inverse {
+    background-color: var(--bg-default);
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-brand {
+    color: var(--text-color);
+}
+
+.navbar-header {
+    display: none;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: #27272775;
+    transition: 0.5s;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #000;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #525252;
+}
+
+div#logo-header {
+    width: 10%;
+}
+
+.footer {
+    padding: 50px 0 50px 0;
+    margin-bottom: 25px;
+    background-color: rgb(0, 34, 48);
+    color: #fff;
+}
+
+#newsletter {
+    color: var(--primary-color);
+    padding: 5px;
+}
+
+#submit-newsletter {
+    color: var(--primary-color);
+    padding: 5px;
+}
+
+.container-logo-footer {
+    padding: 25px 15px 0px 0px;
+}
+
+.container-logo-footer>img {
+    width: 10%;
+}
+
+.description-footer {
+    padding-right: 50px;
+    text-align: justify;
+}
+
+#logo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-header>img {
+    padding: 10px;
+    width: 10%;
+}
+
+.navbar-header {
+    width: 75%;
+}
+
+.search {
+    width: 50%;
+}
+
+.search>input {
+    width: 100%;
+}
+
+.sociais>i {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.sociais {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+div#logo-header {
+    width: 100%;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.sociais-footer > i {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.logo-footer {
+    width: 10%;
+}
+
+@media screen and (max-width: 1150px) {
+    .sociais {
+        display: none;
+    }
+
+    .container-fluid {
+        display: block;
+    }
+
+    #logo {
+        width: 25%;
+    }
+
+    .navbar-header {
+        display: inline-flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    button.navbar-toggle {
+        border: none;
+        color: #000;
+    }
+
+    button.navbar-toggle:hover {
+        border: none;
+        background-color: rgba(0, 0, 0, 0)
+    }
+
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: var(--primary-color);
+    }
+
+    #btn-mobile:hover{
+        background-color: transparent;
+    }
+
+    #btn-mobile {
+        background-color: #f8f8f8;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .description-footer {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .logo-footer {
+        width: 35%;
+    }
+}
+      </style>
+      
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+<header class="header" id="navbarsticky">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" id="btn-mobile" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href=".html"><img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/logo%20png%20preta.png?token=GHSAT0AAAAAACWNLPRHS3LAEWY26GABE4CWZXUR7YQ" width="130px" style="padding-top: 20px" id="" alt="">
+                        <li style="padding-top: 55px;"><a href="/">Início</a></li>
+                        <li><a href="../pontos-turisticos/PontosTuristicos.html" style="padding-top: 70px;">Pontos Turísticos</a></li>
+                        <li><a href="../acomodacao/acomodacao/acomodacoes.html" style="padding-top: 70px;">Acomodações</a></li>
+                        <li><a href="../restaurantes-piscinas/index.html" style="padding-top: 70px;">Refeitório e Piscina</a></li>
+                        <li class="active"><a href="../area-recreativa/area_recreativa.html" style="padding-top: 70px;">Área Recriativa</a></li>
+                        <li><a href="../pacotes-promocionais/pacotes.html" style="padding-top: 70px;">Pacotes Promocionais</a></li>
+                        <li><a href="../FaleConosco/FaleConosco/index.html" style="padding-top: 70px;">Fale Conosco</a></li>
+                    </ul>
+                    <div class="sociais" style="padding-top: 80px";>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+<!--<div class="container-fluid">
+
+    <nav class="navbar navbar-inverse" id="navbarsticky">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                <a href=".html"><img class="img-responsive" src="" width="70" height="50" alt=""></a> 
+
+          </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              
+            <ul class="nav navbar-nav">
+                <a class="navbar-brand" href=".html" style="padding-top: 25px;"><h4>Pontos Turísticos</h4></a>
+
+                <a class="navbar-brand" href=".html" style="padding-top: 25px;"><h4>Acomodações</h4></a>
+                
+                <a class="navbar-brand" href=".html" style="padding-top: 25px;"><h4>Refeitório e Pscina</h4></a>
+                
+                <a class="navbar-brand" href=".html" style="padding-top: 25px;"><h4>Pacotes Promocionais</h4></a>
+                
+                <a class="navbar-brand" href=".html" style="padding-top: 25px;"><h4>Fale Conosco</h4></a>
+            </ul>
+
+            
+            <ul class="nav navbar-nav navbar-right">     
+                <li><a class="navbar-brand" href="cadastrar.html"><span class="glyphicon glyphicon-user" style="padding-top: 10px;"></span> Cadastre-se</a></li>
+                <li><a class="navbar-brand" href="login.html"><span class="glyphicon glyphicon-log-in" style="padding-top: 10px;"></span> Login</a></li>    
+            </ul>
+               
+
+        </div>
+          
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <a href=".html"><img class="img-responsive" src="" alt=""></a>
+            </div>
+        </div>
+    </nav>-->
+
+<!-- Alterar design de pagina para colocar imagend e textos de referente a recriação -->
+
+<div class="row" style="padding-top: 30px; padding-bottom: 30px;">
+
+    <div>
+        <center>
+            <h1>
+                <font 7>Área Recreativa</font>
+            </h1>
+        </center>
+    </div>
+            
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        <center>
+            <img class="img-responsive" src="https://voenews.com.br/wp-content/uploads/2023/02/voenews.90-122.jpg" alt="" style="padding-top: 40px;">
+        </center>
+    </div>
+
+    
+    <div class="col-md-6 col-sm-6 col-xs-9 hidden-xs">
+        <center>
+            <h2><b>Espaço Kids</b></h2>
+        </center>
+        <div>
+            <align = "justify">
+                <h3 style="text-align: justify;">Uma fábrica de diversão incrível, com um espaço acolhedor e uma variedade 
+                    de atividades diárias que trazem momentos de alegria para as crianças. As atrações incluem jogos de 
+                    mesa, oficinas de pintura, artesanato, recreação em brinquedos e recreação nas pscnas externas. Também 
+                    oferecemos a copa baby, garantindo mais conforto e praticidade aos pais durante toda a estadia. Todo 
+                    o local foi projetado pensando na diversão e segurança das crianças, junto de nossos monitores.
+                    (Lembrando que crianças menores de 6 anos devem estar acompanhadas dos pais ou responsáveis).
+                </h3>
+            </align>
+        </div>
+    </div>
+
+</div>
+
+<div class="row" style="padding-top: 30px; padding-bottom: 30px;">
+    <div class="col-md-6 col-sm-6 col-xs-9 hidden-xs">
+        <center>
+            <h2><b>Recreação na piscina</b></h2>
+        </center>
+    <div>
+        <align = "justify">
+            <h3 style="text-align: justify;">Nossa área de recreação na piscina é o lugar perfeito para a diversão de 
+                toda a família! Com espaços seguros e animados, oferecemos atividades aquáticas, brincadeiras 
+                supervisionadas e muito espaço para relaxar. Seja mergulhando ou participando das brincadeiras com nossos 
+                monitores, a diversão está garantida para todas as idades! <a href=".html">Confra o espaço piscina!</a></h3>
+        </align>
+    </div>
+
+    </div>
+
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        <center>
+            <a href=".html"><img class="img-responsive" src="https://static.readytotrip.com/upload/information_system_24/5/8/6/item_586409/photo_93856702.jpg" alt="" style="padding-top: 0px;"></a>
+        </center>
+    </div>
+
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col-lg-12">
+        <center>
+            <a href=".html"><img class="img-responsive" src="" alt=""></a>
+        </center>
+    </div>
+</div>
+
+<hr>
+
+<div class="row">
+    <div class="col-md-12 col-sm-6 col-xs-9" style="padding-top: 10px">
+        <center>
+            <h3><a href="visita.html"><b>Faça já sua reserva</b></a></h3>
+        </center>
+    </div>
+</div>
+
+<hr>
+<!--
+<br>
+
+<div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-12 hidden-xs">
+        <h3 class="hidden-xs" aling="left" style="padding-left: 71px;"><b>Hotel</b></h3>
+        <center>
+             Trocar pelos textos com hiperlink correspondentes
+            <img class="img-responsive" src="whiteret.png" alt="">
+        </center>
+    </div>
+
+    <div class="col-md-4 col-sm-4 col-xs-12 hidden-xs">
+        <h3 class="hidden-xs" aling="left" style="padding-left: 71px;"><b>Fale Conosco</b></h3>
+        <center>
+             Trocar pelos textos com hiperlink correspondentes
+            <img class="img-responsive" src="whiteret.png" alt="">
+        </center>
+    </div>
+
+    <div class="col-md-4 col-sm-4 col-xs-12 hidden-xs">
+        <h3 class="hidden-xs" aling="left" style="padding-left: 71px;"><b>Social</b></h3>
+        <center>
+             Trocar pelos textos com hiperlink correspondentes>
+            <img class="img-responsive" src="whiteret.png" alt="">
+        </center>
+    </div>
+</div>
+-->
+</div>
+
+    <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Última versão JavaScript compilada e minificada -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

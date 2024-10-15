@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pacotes</title>
+</head>
+
+<body>
+    <header class="header">
+        <!--Inicio Header-->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/logo%20png%20preta.png?token=GHSAT0AAAAAACWNLPRHS3LAEWY26GABE4CWZXUR7YQ"
+                    id="logo" alt="logo" />
+                <div class="navbar-header">
+                    <button type="button" id="btn-mobile" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Início</a></li>
+                        <li><a href="../pontos-turisticos/PontosTuristicos.html">Pontos Turísticos</a></li>
+                        <li><a href="../acomodacao/acomodacao/acomodacoes.html">Acomodações</a></li>
+                        <li><a href="../restaurantes-piscinas/index.html">Refeitório e Piscina</a></li>
+                        <li><a href="../area-recreativa/area_recreativa.html">Área Recriativa</a></li>
+                        <li class="active"><a href="../pacotes-promocionais/pacotes.html">Pacotes Promocionais</a></li>
+                        <li><a href="../FaleConosco/FaleConosco/index.html">Fale Conosco</a></li>
+                    </ul>
+                    <div class="sociais">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--Fim Header-->
+    </header>
+    <center>
+        <br>
+        <h3 style="font-size: 50px; color: black; font-family: Verdana;">Pacotes Promocionais</h3>
+        <br>
+    </center>
+    <div class="container-fluid">
+        <!-- Início Carousel -->
+        <div class="row" style="padding-top: 10px">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <center>
+                                <a href=".html"><img class="img-responsive" style="height: 600px; width: 1200px;"
+                                        src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/banner1.jpg"
+                                        alt=""></a>
+                            </center>
+                        </div>
+                        <div class="item">
+                            <center>
+                                <a href=".html"><img class="img-responsive" style="height: 600px; width: 1200px;"
+                                        src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/banner2.jpg"
+                                        alt=""></a>
+                            </center>
+                        </div>
+                        <div class="item">
+                            <center>
+                                <a href=".html"><img class="img-responsive" style="height: 600px; width: 1200px;"
+                                        src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/banner3.jpg"
+                                        alt=""></a>
+                            </center>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Fim Carousel -->
+    </div>
+
+    <br>
+    <div class="container" style="background-color: rgba(0, 0, 0, 0.342);">
+        <!-- Inicio LeftContainer -->
+        <div class="container-fluid">
+            <!-- Início Carousel -->
+            <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div id="carousel2" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel2" data-slide-to="1"></li>
+                            <li data-target="#carousel2" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <center>
+                                    <img class="img-responsive" style="height: 270px; width: 270px;"
+                                        src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C1.1.jpg"
+                                        alt="">
+                                </center>
+                            </div>
+                            <div class="item">
+                                <center>
+                                    <img class="img-responsive" style="height: 270px; width: 270px;"
+                                        src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C1.2.JPG"
+                                        alt="">
+                                </center>
+                            </div>
+                            <div class="item">
+                                <center>
+                                    <img class="img-responsive" style="height: 270px; width: 270px;"
+                                        src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C1.3.JPG"
+                                        alt="">
+                                </center>
+                            </div>
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel2" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9" style="color: black;">
+                <h2 style="text-align: center;">Pacote Luxo - "Escapada dos Sonhos"</h2><br>
+                <p>Desfrute de uma experiência inesquecível em nossa acomodação de luxo. Relaxe em um ambiente
+                    sofisticado, com vista para a natureza exuberante de Gramado. Nosso pacote inclui: <br>
+                    °Diárias em suíte de luxo com jacuzzi privativa. <br>
+                    °Café da manhã gourmet incluso. <br>
+                    °Acesso à piscina e áreas de lazer. <br>
+                    °Um jantar especial no nosso restaurante, com pratos da culinária local. Explore os pontos
+                    turísticos como o Lago Negro e o Mini Mundo, e finalize o dia com um merecido descanso em nosso spa.
+                    <br>
+                </p><br><br>
+                <div class="bottom-right">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        Saiba Mais
+                    </button>
+                </div>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Pacote Luxo -
+                                    "Escapada dos Sonhos"</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Desperte em um oásis de sofisticação em nossa pousada de luxo, onde cada detalhe é
+                                pensado para proporcionar uma experiência inesquecível. Nossas suítes de luxo são
+                                espaçosas, decoradas com requinte e equipadas com jacuzzi privativa, garantindo total
+                                conforto e privacidade. <BR></BR>
+                                Acompanhamentos do Pacote: <BR><br>
+                                °Café da Manhã Gourmet: Delicie-se com uma variedade de pães artesanais, frutas frescas
+                                e
+                                pratos quentes preparados com ingredientes locais. <BR><br>
+                                °Jantar Especial: Saboreie um menu exclusivo em nosso restaurante, com opções que
+                                ressaltam a rica culinária gaúcha. <BR><br>
+                                °Acesso à Piscina: Relaxe em nossa piscina aquecida, rodeada por um belo jardim,
+                                perfeito
+                                para momentos de tranquilidade. <BR><br>
+                                Spa Relaxante: Desfrute de um voucher para um tratamento de spa, revitalizando corpo e
+                                mente. <BR><br>
+                                °Além disso, explore pontos turísticos icônicos de Gramado, como o Lago Negro e o Mini
+                                Mundo, com a conveniência de estar a poucos minutos de todas as atrações. <BR><br>
+                            </div>
+                            <div class="modal-footer"
+                                style="align-items: center; background-color: rgba(0, 0, 0, 0.466);">
+                                <div style="color: aliceblue;">
+                                    Para mais informações contate-nos:
+                                    <div class="sociais-footer">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-linkedin"></i>
+                                        <i class="fa-solid fa-map-pin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim LeftContainer -->
+    </div>
+    <div class="container" style="background-color: rgba(0, 0, 0, 0.342);">
+        <!-- Inicio RigthContainer -->
+        <div class="row align-items-center" style="color: black;">
+            <div class="col-md-9">
+                <h2 style="text-align: center;">Pacote Premium - "Aventuras em Família"</h2><br>
+                <p>Traga sua família para uma estadia premium em nossa pousada, onde conforto e diversão estão
+                    garantidos. Neste pacote, você terá: <br>
+                    °Acomodações espaçosas com vista para o jardim. <br>
+                    °Café da manhã farto para todos. <br>
+                    °Acesso à piscina e atividades recreativas para crianças. <br>
+                    °Um passeio guiado aos principais pontos turísticos, como o Mundo a Vapor e a Rua Coberta. Aproveite
+                    momentos especiais em família, com tudo o que Gramado tem a oferecer! <br>
+                </p><br><br>
+                <div class="bottom-left">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModa2">
+                        Saiba mais
+                    </button>
+                </div>
+                <div class="modal fade" id="myModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Pacote Premium -
+                                    "Aventuras em Família"</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Traga sua família para criar memórias inesquecíveis em nossa pousada premium, que
+                                combina conforto, diversão e atividades para todas as idades. Nossas acomodações são
+                                projetadas para oferecer amplo espaço e comodidade, com vistas deslumbrantes para a
+                                natureza. <br> <br>
+                                Acompanhamentos do Pacote: <br> <br>
+                                °Café da Manhã Farto: Comece o dia com um buffet variado, com opções que agradam a
+                                todos,
+                                desde os mais jovens até os mais velhos. <br> <br>
+                                °Atividades Recreativas: Aproveite nossas áreas de lazer, incluindo uma piscina
+                                infantil,
+                                sala de jogos e atividades monitoradas para crianças. <br> <br>
+                                °Passeio Guiado: Explore os principais pontos turísticos de Gramado com um guia
+                                especializado, incluindo o Mundo a Vapor e a Rua Coberta, onde a magia da cidade ganha
+                                vida. <br> <br>
+                                °Jantar em Família: Saboreie um jantar em nosso restaurante, com pratos que atendem a
+                                todos os paladares, desde opções vegetarianas até carnes nobres. <br> <br>
+                                °Ao final do dia, relaxe em um ambiente acolhedor, onde cada membro da família se
+                                sentirá
+                                em casa. <br> <br>
+                            </div>
+                            <div class="modal-footer"
+                                style="align-items: center; background-color: rgba(0, 0, 0, 0.466);">
+                                <div style="color: aliceblue;">
+                                    Para mais informações contate-nos:
+                                    <div class="sociais-footer">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-linkedin"></i>
+                                        <i class="fa-solid fa-map-pin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carrossel à direita -->
+            <div class="col-md-3 col-sm-12">
+                <div id="carousel3" class="carousel slide" data-ride="carousel">
+                    <!-- Indicadores -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel3" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel3" data-slide-to="1"></li>
+                        <li data-target="#carousel3" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-responsive" style="height: 270px; width: 270px;"
+                                src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C2.1.jpg"
+                                alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" style="height: 270px; width: 270px;"
+                                src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C2.2.jpg"
+                                alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" style="height: 270px; width: 270px;"
+                                src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C2.3.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <!-- Controles -->
+                    <a class="left carousel-control" href="#carousel3" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel3" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Fim RightContainer -->
+    </div>
+    <div class="container" style="background-color: rgba(0, 0, 0, 0.342);">
+        <!-- Inicio LeftContainer -->
+        <div class="container-fluid">
+            <!-- Início Carousel -->
+            <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div id="carousel4" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel4" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel4" data-slide-to="1"></li>
+                            <li data-target="#carousel4" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <center>
+                                    <img class="img-responsive" style="height: 270px; width: 270px;"
+                                        src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C3.1.jpg"
+                                        alt="">
+                                </center>
+                            </div>
+                            <div class="item">
+                                <center>
+                                    <img class="img-responsive" style="height: 270px; width: 270px;"
+                                        src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C3.2.jpg"
+                                        alt="">
+                                </center>
+                            </div>
+                            <div class="item">
+                                <center>
+                                    <img class="img-responsive" style="height: 270px; width: 270px;"
+                                        src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C3.3.jpg"
+                                        alt="">
+                                </center>
+                            </div>
+                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel4" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel4" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9" style="color: black;">
+                <h2 style="text-align: center">Pacote Executivo - "Conexão e Conforto"</h2><br>
+                <p>Ideal para quem viaja a trabalho, nosso pacote executivo combina praticidade e conforto. Com ele,
+                    você terá: <br>
+                    °Acomodação em suíte executiva com mesa de trabalho. <br>
+                    °Café da manhã saudável e opções rápidas para o seu dia. <br>
+                    °Acesso à piscina e áreas de relaxamento. <br>
+                    °Wi-Fi gratuito e salas de reunião disponíveis. Desfrute de um ambiente tranquilo e produtivo, além
+                    da proximidade com os principais centros de negócios e pontos turísticos, como o Palácio dos
+                    Festivais. <br>
+                </p><br><br>
+                <div class="bottom-right">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+                        Saiba mais
+                    </button>
+                </div>
+                <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Pacote Executivo -
+                                    "Conexão e Conforto"</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Ideal para viajantes a trabalho, nosso pacote executivo combina praticidade e um
+                                ambiente acolhedor. Nossas suítes executivas são equipadas com mesa de trabalho, Wi-Fi
+                                de alta velocidade e todas as comodidades necessárias para uma estadia produtiva.
+                                <BR></BR>
+                                Acompanhamentos do Pacote: <BR></BR>
+                                °Café da Manhã Saudável: Comece o dia com uma seleção de opções saudáveis, perfeitas
+                                para
+                                energizar sua rotina. <BR></BR>
+                                °Salas de Reunião: Aproveite nosso espaço dedicado para reuniões, equipado com
+                                tecnologia
+                                moderna. <BR></BR>
+                                °Acesso à Piscina e Áreas de Relaxamento: Após um dia intenso, relaxe na nossa piscina
+                                ou
+                                no lounge, desfrutando de um momento de tranquilidade. <BR></BR>
+                                °Atendimento Personalizado: Nossa equipe está sempre à disposição para ajudar com
+                                serviços de concierge, garantindo que todas as suas necessidades sejam atendidas.
+                                <BR></BR>
+                                °Localizada próxima a centros de negócios e atrações turísticas, nossa pousada é o
+                                refúgio perfeito para executivos que buscam equilíbrio entre trabalho e lazer. <BR></BR>
+                            </div>
+                            <div class="modal-footer"
+                                style="align-items: center; background-color: rgba(0, 0, 0, 0.466);">
+                                <div style="color: aliceblue;">
+                                    Para mais informações contate-nos:
+                                    <div class="sociais-footer">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-linkedin"></i>
+                                        <i class="fa-solid fa-map-pin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim LeftContainer -->
+    </div>
+    <div class="container" style="background-color: rgba(0, 0, 0, 0.342);">
+        <!--Inicio RightContainer-->
+        <div class="row" style="padding-top: 5px; padding-bottom: 5px;">
+            <!-- Texto à esquerda -->
+            <div class="col-md-9 col-sm-12" style="color: black;">
+                <h2 style="text-align: center;">Pacote Romântico - "Fuga a Dois"</h2><br>
+                <p>Celebre o amor em grande estilo com nosso pacote romântico. Ideal para casais em busca de um
+                    refúgio especial, este pacote inclui: <br>
+                    °Acomodações luxuosas com decoração romântica.
+                    °Café da manhã servido no quarto. <br>
+                    °Jantar à luz de velas em nosso restaurante. <br>
+                    °Acesso à piscina e área de spa para um momento de relaxamento a dois. Descubra os encantos de
+                    Gramado juntos, visitando locais românticos como o Jardim do Lago e as encantadoras lojas de
+                    chocolates. <br>
+                </p><br><br>
+                <div class="bottom-left">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModa3">
+                        Saiba mais
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModa3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel" style="text-align: center;">Pacote
+                                    Romântico - "Fuga a Dois"</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Celebre o amor em um cenário encantador em nossa pousada romântica, onde cada
+                                momento é projetado para criar memórias especiais. Nossas suítes luxuosas, decoradas
+                                com toques românticos, proporcionam o ambiente perfeito para um refúgio a dois.
+                                <BR></BR>
+                                Acompanhamentos do Pacote: <BR></BR>
+                                °Café da Manhã no Quarto: Desfrute de um delicioso café da manhã servido diretamente
+                                em sua suíte, permitindo que vocês aproveitem a manhã em privacidade. <BR></BR>
+                                °Jantar à Luz de Velas: Delicie-se com um jantar romântico em nosso restaurante, com
+                                um menu que combina sabores regionais e requinte. <BR></BR>
+                                °Spa para Casais: Desfrute de um tratamento relaxante no spa, ideal para casais que
+                                buscam um momento de conexão. <BR></BR>
+                                °Passeios Românticos: Explore Gramado com passeios especiais, como caminhadas no
+                                Jardim do Lago ou visitas a vinícolas locais, perfeitas para desfrutar a dois.
+                                Deixe-se levar pela magia de Gramado e aproveite a tranquilidade e o amor em cada
+                                detalhe da sua estadia.<BR></BR>
+                            </div>
+                            <div class="modal-footer"
+                                style="align-items: center; background-color: rgba(0, 0, 0, 0.466);">
+                                <div style="color: aliceblue;">
+                                    Para mais informações contate-nos:
+                                    <div class="sociais-footer">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-linkedin"></i>
+                                        <i class="fa-solid fa-map-pin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carrossel à direita -->
+            <div class="col-md-3 col-sm-12">
+                <div id="carousel5" class="carousel slide" data-ride="carousel">
+                    <!-- Indicadores -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel5" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel5" data-slide-to="1"></li>
+                        <li data-target="#carousel5" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-responsive" style="height: 270px; width: 270px;"
+                                src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C4.1.JPG"
+                                alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" style="height: 270px; width: 270px;"
+                                src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C4.2.jpg"
+                                alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" style="height: 270px; width: 270px;"
+                                src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/pacotes-promocionais/C4.3.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <!-- Controles -->
+                    <a class="left carousel-control" href="#carousel5" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel5" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Fim RightContainer -->
+    </div>
+    <br>
+    <br>
+    <div class="text-center widget">
+        <img class="lazyload loaded" style="max-width: 100%"
+            data-src="https://cdn-hweb.hsystem.com.br/59f36cf3c19a3c13b4ce3b4e/425be637debb4453aa70c5d7b601714a.png"
+            alt="ImageSimple"
+            src="https://cdn-hweb.hsystem.com.br/59f36cf3c19a3c13b4ce3b4e/425be637debb4453aa70c5d7b601714a.png"
+            data-was-processed="true">
+    </div>
+    <footer class="footer">
+        <!--Inicio Footer-->
+        <div class="container">
+            <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/logo%20png%20branca.png?token=GHSAT0AAAAAACWNLPRGRLXBLYMKK4RGJGGYZXUR7CQ"
+                class="logo-footer" alt="logo-footer" />
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Quem Somos</h2>
+                    <p class="description-footer">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                        has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                        Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                        the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
+                        cites of the word in classical literature, discovered the undoubtable source.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Menu</h2>
+                    <p>Pontos Turísticos</p>
+                    <p>Acomodações</p>
+                    <p>Refeitório e Piscina</p>
+                    <p>Área Recreativa</p>
+                    <p>Pacotes Promocionais</p>
+                    <p>Fale Conosco</p>
+                    <p>Quem somos</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Endereço</h2>
+                    <p>Localidade: Gramado - RS</p>
+                    <p>Telefone: (XX) XXXXX-XXXX</p>
+                    <p>Email: contato@turistica.com.br</p>
+                    <h3>Newletter</h3>
+                    <input type="email" name="email" id="newsletter" placeholder="Seu email aqui..." />
+                    <input type="submit" value="Enviar" id="submit-newsletter" />
+                    <div class="sociais-footer">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                </div>
+            </div>
+            <span>© Turistica - todos os direitos reservados 2024</span>
+        </div>
+        <!--Fim Footer-->
+    </footer>
+</body>
+
+</html>
